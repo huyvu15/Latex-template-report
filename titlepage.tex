@@ -1,0 +1,72 @@
+\begin{titlepage}
+	\begin{tikzpicture}[overlay,remember picture]
+	\path 
+	(current page.north west) coordinate (A) 
+	(current page.north east) coordinate (B)
+	(current page.south east) coordinate (C)
+	(current page.south west) coordinate (D)
+	(current page.center) coordinate (E);
+	\draw[blue!70!black,line width=4pt] ([xshift=-1cm,yshift=-1cm]current page.north east) coordinate (A)--([xshift=2cm,yshift=-1cm]current page.north west) coordinate(B)--([xshift=2cm,yshift=1cm]current page.south west) coordinate (C)--([xshift=-1cm,yshift=1cm]current page.south east) coordinate(D)--cycle;
+	\draw ([yshift=0.25cm,xshift=-0.25cm]A)-- ([yshift=0.25cm,xshift=0.25cm]B)--
+	([yshift=-0.25cm,xshift=0.25cm]B) --([yshift=-0.25cm,xshift=-0.25cm]B)--([yshift=0.25cm,xshift=-0.25cm]C)--([yshift=0.25cm,xshift=0.25cm]C)--([yshift=-0.25cm,xshift=0.25cm]C)-- ([yshift=-0.25cm,xshift=-0.25cm]D)--([yshift=0.25cm,xshift=-0.25cm]D)--([yshift=0.25cm,xshift=0.25cm]D)--([yshift=-0.25cm,xshift=0.25cm]A)--([yshift=-0.25cm,xshift=-0.25cm]A)--([yshift=0.25cm,xshift=-0.25cm]A);
+	\draw ([yshift=-0.15cm,xshift=0.15cm]A)-- ([yshift=-0.15cm,xshift=-0.15cm]B)--
+	([yshift=0.15cm,xshift=-0.15cm]B) --([yshift=0.15cm,xshift=0.15cm]B)--([yshift=-0.15cm,xshift=0.15cm]C)--([yshift=-0.15cm,xshift=-0.15cm]C)--([yshift=0.15cm,xshift=-0.15cm]C)-- ([yshift=0.15cm,xshift=0.15cm]D)--([yshift=-0.15cm,xshift=0.15cm]D)--([yshift=-0.15cm,xshift=-0.15cm]D)--([yshift=0.15cm,xshift=-0.15cm]A)--([yshift=0.15cm,xshift=0.15cm]A)--([yshift=-0.15cm,xshift=0.15cm]A);
+	
+	
+	\end{tikzpicture}
+\begin{center}
+        \vspace{-30pt}{\textbf{\fontsize{17pt}{0pt} \selectfont \hspace{1.5 cm}  ĐẠI HỌC BÁCH KHOA HÀ NỘI  }}\\[0.25cm]
+        \hspace{1.8 cm} {\fontsize{15pt}{1}\selectfont\textbf{KHOA TOÁN TIN}}
+	\\		
+	\hspace{1.8 cm} \textbf{--------------------  o0o  ---------------------}\\[1cm]
+	\hspace{1.8 cm} \includegraphics[scale=0.43]{images/BVP-logo bk-rgb.jpg} \\[1.2cm]
+	\hspace{1.8 cm} \textbf{\fontsize{23pt}{0pt} \selectfont BÁO CÁO MÔN HỌC }
+\textbf{}\\[0.5cm]
+\hspace{1.8 cm} \textbf{\fontsize{17.5pt}{0pt} \selectfont MÔN HỌC: CƠ SỞ DỮ LIỆU }\\
+\vspace{0.7cm}
+\hspace{1.8 cm} \textbf{\fontsize{20pt}{0pt} \selectfont ĐỀ TÀI: QUẢN LÝ HIỆU THUỐC }\\
+\vspace{1.4cm}
+
+\hspace{1.8 cm} \textbf{ Giảng viên hướng dẫn:\hspace{0.2cm}{TS.Nguyễn Thị Thanh A}}\\[0.5cm]
+\hspace{1.8 cm} \textbf{ Sinh viên thực hiện: Nguyễn Văn A }\\ [0.55cm]
+
+\hspace{1.8 cm} \textbf{Lớp: Hệ thống thông tin quản lý - K70}
+\end{center}
+
+
+\vspace{4cm}
+
+\begin{center}
+   \hspace{1.8 cm}  Hà Nội, 8/2024.
+\end{center}
+
+\end{titlepage}
+
+
+
+\newpage
+\fontsize{13pt}{22pt}\selectfont
+
+\textcolor{DarkBlue}{\textbf{\fontsize{16pt}{22pt}\selectfont Lời cảm ơn}}\\
+
+Em xin gửi lời cảm ơn sâu sắc và lòng biết ơn chân thành đến cô vì những hướng dẫn, đóng góp và tạo điều kiện quý báu mà cô đã dành cho em trong suốt quá trình học môn Cơ sở dữ liệu. Cô không chỉ truyền đạt kiến thức một cách rõ ràng và sáng tạo, mà còn đảm bảo em có cơ hội áp dụng kiến thức vào các bài thực hành, từ đó giúp em nắm vững và phát triển kỹ năng thực tiễn một cách hiệu quả.
+\\
+\\
+Thông qua môn học này, em đã thấu hiểu được vai trò và ý nghĩa của cơ sở dữ liệu trong quản lý thông tin và xử lý dữ liệu, từ việc xây dựng một cơ sở dữ liệu hoàn chỉnh cho đến việc hiểu rõ hơn về các khái niệm cơ bản như mô hình dữ liệu, truy vấn dữ liệu, và quản lý cơ sở dữ liệu. Điều này đã giúp em xây dựng nền tảng vững chắc cho công việc sau này và trang bị cho em những kiến thức cần thiết để tự tin vận dụng vào thực tiễn.
+\\
+\\
+Bài thực hành trong suốt các tuần học có vai trò cực kỳ quan trọng, đó là cách em áp dụng kiến thức đã học vào thực tế và giúp em có cái nhìn tổng quan về ngôn ngữ truy vấn SQL. Nhờ đó, em đã hiểu rõ hơn về cách thức thao tác với cơ sở dữ liệu, từ việc truy vấn dữ liệu đơn giản đến những tác vụ phức tạp hơn.
+\\\\
+Một lần nữa, em xin chân thành cảm ơn cô Nguyễn Thị Thanh Huyền vì sự tận tâm và những kiến thức quý báu mà cô đã chia sẻ, giúp em trở thành một người học Cơ sở dữ liệu trọn vẹn hơn. Em rất biết ơn và hứa sẽ nỗ lực không ngừng để phát triển những kiến thức này trong tương lai.
+
+\begin{flushright}
+.
+
+\begin{tabular}{c}
+\textbf{Trân trọng cảm ơn}\\
+
+\textbf{Báo cáo cá nhân}\\
+
+\textbf{Vũ Văn Huy }\\
+\end{tabular}
+\end{flushright}

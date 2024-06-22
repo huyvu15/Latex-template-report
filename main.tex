@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --------------------------------------------------------
+% LaTeX Template
+% Version 2.4.1 (22/05/2024)
+%
+% Author: 
+% Vũ Huy (huyv80313@gmail.com)
+% 
+% License:
+% Creative Commons CC BY 4.0
+% --------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt, twoside]{article}
+\usepackage[utf8]{vietnam}   
+\usepackage[vietnamese]{babel}
+% \usepackage{todonotes}              % to do notes 
+\usepackage{subfiles}               % add subfiles
+\usepackage[T1]{fontenc}  
+\usepackage{indentfirst}
+\setlength{\parindent}{1cm}
+\usepackage{enumerate}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{enumitem}
+% gói tạo bảng
+\usepackage{tabularx}
+\usepackage{tabu}
+\usepackage[table]{xcolor}
+
+\setlist[enumerate,1]{font=\bfseries, leftmargin=*}
+\input{report.sty}
+
+
+\setlength{\parskip}{0em}
+\lhead{\textcolor{DarkBlue}{\textbf{Báo cáo môn học}}} % section header
+\renewcommand{\baselinestretch}{0.95}\normalsize
+\renewcommand{\baselinestretch}{1.0}\normalsize
+% \setlength{\parskip}{1em}
+
+% phần sửa thêm
+%----------------------------------------------
+
+\titleformat{\section}[hang]
+{\bfseries}
+{\filright
+\begin{tikzpicture}
+\node[inner xsep=2pt,
+font=\color{white},minimum height=1cm,
+align=center, diamond, fill = DarkBlue, aspect=1.5
+]{\LARGE\sffamily\thesection};
+\end{tikzpicture}
+}
+{-15pt}
+{\begin{tikzpicture}
+ \node[inner xsep=5pt,
+    align=left,  minimum height=1.15cm, signal, signal from=west,fill=DarkBlue, font=\color{white}, signal pointer angle = 67.38]
+    {\mbox{\LARGE\bfseries\raggedright\sffamily #1}};
+\end{tikzpicture}}
+
+
+% ----------------------------------
+\setlength{\footskip}{30.70386pt}
+\usepackage{ragged2e}
+
+%----------------------------------
+\begin{document}
+\include{titlepage}
+\pagebreak
+
+
+\tableofcontents
+\setlength{\parskip}{1em}
+
+
+
+\clearpage
+\subfile{sections/chap0.tex}
+\clearpage
+\subfile{sections/chap1.tex}
+\clearpage
+\subfile{sections/chap2.tex}
+\clearpage
+\subfile{sections/chap3.tex}
+\clearpage
+\subfile{sections/chap4.tex}
+\clearpage
+\subfile{sections/chap5.tex}
+\clearpage
+\subfile{sections/chap6.tex}
+
+\end{document}
